@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="../js/dashboard.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/api.js"></script>
 </head>
 <body>
     <div class="grid-container">
@@ -38,6 +40,14 @@
             <div class="title menu">
                 <ul id="menu">
                     <li>
+                        <a href="../pages/dashboard.html">
+                            <div class="menu-item subtitle logo">
+                                <img src="../source/img/logo.JPG" />
+                                <p class="subtitle">Pago Total</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
                         <a href="../pages/balance.html">
                             <div class="menu-item subtitle">
                                 <p class="subtitle">Saldos</p>
@@ -62,20 +72,59 @@
             </div>
         </div>
         <div class="container-movimientos area">
-            <div class="title">Movimientos</div>
+            <table class="tabla">
+                <tr>
+                    <th>Fecha</th>
+                    <th>Movimiento</th>
+                    <th>Detalle</th>
+                </tr>
+                <tr>
+                    <td>01/01/2023</td>
+                    <td>$ 90.000</td>
+                    <td>Coto</td>
+                </tr>
+                <tr>
+                    <td>01/01/1978</td>
+                    <td>$ 5.000</td>
+                    <td>Dia</td>
+                </tr>
+                <tr>
+                    <td>01/01/2023</td>
+                    <td>$ 30.000</td>
+                    <td>Mercado Libre</td>
+                </tr>
+                <tr>
+                    <td>01/01/2023</td>
+                    <td>$ 200.000</td>
+                    <td>Deposito</td>
+                </tr>
+                <tr>
+                    <td>01/01/2023</td>
+                    <td>$ 70.000</td>
+                    <td>Grido</td>
+                </tr>
+                <tr>
+                    <td>01/01/2023</td>
+                    <td>- $ 50.000</td>
+                    <td>Transferencia</td>
+                </tr>
+                <tr>
+                    <td>01/01/2023</td>
+                    <td>- $ 15.000</td>
+                    <td>Transferencia</td>
+                </tr>
+                <tr>
+                    <td>01/01/2023</td>
+                    <td>- $ 100.000</td>
+                    <td>Transferencia</td>
+                </tr>
+                
+              </table>
         </div>  
         <div class="container-contactos area">
-            <div class="title">Contactos</div>
-            <ul id="contacts">
-                <li>
-                    <div>
-                        <div class="preview">
-                            <img src="../source/img/undefined-person.webp" />
-                            <p class="subtitle">Alan Thompson</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+            <div class="title contactos">Contactos
+                <ul id="contacts"></ul>
+            </div>
         </div>
     </div>
 </body>
