@@ -1,0 +1,25 @@
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet';
+
+.subtitle {
+	font-family: sans-serif;
+    font-size: 20px;
+}
+
+.title {
+	font-family: 'Inter', sans-serif;
+    font-size: 30px;
+}
+
+.text {
+	font-family: sans-serif;
+    font-size: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color:black;
+    text-decoration:none;
+}
