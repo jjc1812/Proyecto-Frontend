@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const div = document.createElement("div");
             div.className ="preview";
             const image = document.createElement("img");
-            image.src = "../source/img/undefined-person.webp";
+            image.src = "./source/img/undefined-person.webp";
             const li = document.createElement("li");
             const user = document.createElement("p");
             user.className = "subtitle";
